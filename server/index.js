@@ -77,6 +77,8 @@ app.listen(PORT, () => {
   console.log(`📍 Environment: ${NODE_ENV}`);
   console.log(`🌐 Server running on port ${PORT}`);
   console.log(`🔗 Local URL: http://localhost:${PORT}`);
+  console.log(`📧 Business Email: ${process.env.BUSINESS_EMAIL || 'Not configured'}`);
+  console.log(`🔑 Resend API Key: ${process.env.RESEND_API_KEY ? 'Configured ✓' : 'Missing ✗'}`);
   console.log('='.repeat(50));
 });
 
