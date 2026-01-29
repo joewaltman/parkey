@@ -3,6 +3,9 @@
  * Serves static files and handles API routes
  */
 
+// Load environment variables
+require('dotenv').config();
+
 const express = require('express');
 const path = require('path');
 const submitLeadRouter = require('./routes/submit-lead');
