@@ -1,0 +1,32 @@
+{
+  "name": "tom-plumb-landing-page",
+  "version": "1.0.0",
+  "description": "Water heater replacement landing page for Tom Plumb Plumbing - North County San Diego",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "test": "echo \"No tests configured yet\" && exit 0"
+  },
+  "keywords": [
+    "landing-page",
+    "plumbing",
+    "water-heater",
+    "san-diego",
+    "lead-generation"
+  ],
+  "author": "Tom Plumb Plumbing",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "resend": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

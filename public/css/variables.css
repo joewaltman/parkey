@@ -1,0 +1,253 @@
+/* ==========================================================================
+   Design System Variables - Warm San Diego Aesthetic
+   ========================================================================== */
+
+:root {
+  /* ==========================================================================
+     Color Palette - Warm & Local
+     ========================================================================== */
+
+  /* Primary Brand Colors - San Diego Vibes */
+  --color-sunset-orange: #FF8C42;     /* Warm, inviting sunset orange */
+  --color-ocean-blue: #4A90E2;        /* San Diego ocean blue */
+  --color-sunshine-yellow: #FFD166;   /* Bright, happy sunshine */
+  --color-sand-beige: #F4E4D7;        /* Warm sandy neutral */
+  --color-palm-green: #6B9080;        /* Subtle palm accent */
+
+  /* Primary Application Colors */
+  --color-primary: var(--color-ocean-blue);
+  --color-accent: var(--color-sunset-orange);
+  --color-highlight: var(--color-sunshine-yellow);
+
+  /* Text Colors - Softer & Warmer */
+  --color-text-primary: #3D3D3D;      /* Softer than pure black */
+  --color-text-secondary: #6B6B6B;    /* Mid-gray for secondary text */
+  --color-text-light: #9B9B9B;        /* Light gray for tertiary text */
+  --color-text-inverse: #FFFFFF;      /* White text on dark backgrounds */
+
+  /* Background Colors - Warm Whites */
+  --color-background: #FFFCF7;        /* Warm white, not stark */
+  --color-background-alt: var(--color-sand-beige);  /* Sand beige alternate */
+  --color-background-dark: #2D2D2D;   /* Dark background for contrast */
+
+  /* Price Hero Colors */
+  --color-price-bg: linear-gradient(135deg, var(--color-sunset-orange), #FF6B35);
+  --color-price-text: #FFFFFF;
+  --color-price-accent: var(--color-sunshine-yellow);
+
+  /* Status Colors - Softer, Friendlier */
+  --color-success: #6B9080;           /* Softer green - palm-inspired */
+  --color-success-light: #E8F4F0;     /* Light success background */
+  --color-error: #E07A5F;             /* Softer red - warm coral */
+  --color-error-light: #FCF0ED;       /* Light error background */
+  --color-warning: #F4A261;           /* Warm amber */
+  --color-info: var(--color-ocean-blue);
+
+  /* Border Colors */
+  --color-border: #E8E8E8;            /* Light neutral border */
+  --color-border-medium: #D0D0D0;     /* Medium border */
+  --color-border-focus: var(--color-ocean-blue);
+
+  /* ==========================================================================
+     Typography - Friendly & Approachable
+     ========================================================================== */
+
+  /* Font Families */
+  --font-display: 'Quicksand', 'Rounded', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-price: 'Poppins', 'Quicksand', sans-serif;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
+  /* Font Sizes - Mobile First (Base 16px) */
+  --font-size-xs: 0.75rem;      /* 12px */
+  --font-size-sm: 0.875rem;     /* 14px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-md: 1.125rem;     /* 18px */
+  --font-size-lg: 1.25rem;      /* 20px */
+  --font-size-xl: 1.5rem;       /* 24px */
+  --font-size-2xl: 2rem;        /* 32px */
+  --font-size-3xl: 2.5rem;      /* 40px */
+  --font-size-4xl: 3rem;        /* 48px */
+  --font-size-5xl: 4rem;        /* 64px */
+  --font-size-price: clamp(4rem, 12vw, 10rem);  /* Responsive massive price */
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+
+  /* ==========================================================================
+     Spacing System (8px Base Grid)
+     ========================================================================== */
+
+  --space-xs: 0.5rem;       /* 8px */
+  --space-sm: 1rem;         /* 16px */
+  --space-md: 1.5rem;       /* 24px */
+  --space-lg: 2rem;         /* 32px */
+  --space-xl: 3rem;         /* 48px */
+  --space-2xl: 4rem;        /* 64px */
+  --space-3xl: 5rem;        /* 80px */
+  --space-4xl: 6rem;        /* 96px */
+  --space-5xl: 8rem;        /* 128px */
+
+  /* Section Spacing */
+  --section-padding-mobile: var(--space-xl);      /* 48px */
+  --section-padding-tablet: var(--space-2xl);     /* 64px */
+  --section-padding-desktop: var(--space-3xl);    /* 80px */
+
+  /* ==========================================================================
+     Border Radius - Friendly & Organic
+     ========================================================================== */
+
+  --radius-sm: 8px;         /* Small elements */
+  --radius-md: 12px;        /* Buttons, inputs */
+  --radius-lg: 16px;        /* Cards */
+  --radius-xl: 24px;        /* Large cards, price hero */
+  --radius-2xl: 32px;       /* Extra large elements */
+  --radius-round: 50%;      /* Perfect circles */
+  --radius-pill: 999px;     /* Pill-shaped buttons */
+
+  /* ==========================================================================
+     Shadows - Soft & Warm
+     ========================================================================== */
+
+  /* Warm Shadows with Orange Tint */
+  --shadow-warm-sm: 0 2px 8px rgba(255, 140, 66, 0.08);
+  --shadow-warm: 0 4px 20px rgba(255, 140, 66, 0.15);
+  --shadow-warm-lg: 0 8px 40px rgba(255, 140, 66, 0.2);
+
+  /* Neutral Shadows */
+  --shadow-soft-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-soft: 0 2px 15px rgba(0, 0, 0, 0.08);
+  --shadow-soft-lg: 0 4px 30px rgba(0, 0, 0, 0.12);
+
+  /* Interactive Shadows */
+  --shadow-hover: 0 6px 25px rgba(255, 140, 66, 0.2);
+  --shadow-focus: 0 0 0 4px rgba(74, 144, 226, 0.2);
+
+  /* ==========================================================================
+     Transitions & Animations
+     ========================================================================== */
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* Easing Functions */
+  --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* ==========================================================================
+     Layout & Container
+     ========================================================================== */
+
+  --max-width-sm: 640px;
+  --max-width-md: 768px;
+  --max-width-lg: 1024px;
+  --max-width-xl: 1200px;
+  --max-width-2xl: 1440px;
+
+  --container-padding: var(--space-md);  /* 24px */
+
+  /* ==========================================================================
+     Z-Index Scale
+     ========================================================================== */
+
+  --z-below: -1;
+  --z-base: 0;
+  --z-dropdown: 10;
+  --z-sticky: 100;
+  --z-header: 200;
+  --z-modal-backdrop: 900;
+  --z-modal: 1000;
+  --z-tooltip: 1100;
+
+  /* ==========================================================================
+     Grid & Breakpoints
+     ========================================================================== */
+
+  /* Grid Gaps */
+  --grid-gap-sm: var(--space-sm);    /* 16px */
+  --grid-gap-md: var(--space-md);    /* 24px */
+  --grid-gap-lg: var(--space-lg);    /* 32px */
+
+  /* Breakpoint Values (for reference in media queries) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* ==========================================================================
+     Form Elements
+     ========================================================================== */
+
+  --input-height: 48px;
+  --input-padding: 0 var(--space-sm);
+  --input-border-width: 2px;
+  --input-border-radius: var(--radius-md);
+
+  /* ==========================================================================
+     Buttons
+     ========================================================================== */
+
+  --button-height: 56px;
+  --button-height-sm: 44px;
+  --button-padding: 0 var(--space-lg);
+  --button-border-radius: var(--radius-md);
+
+  /* ==========================================================================
+     Special Effect Variables
+     ========================================================================== */
+
+  /* Gradient Backgrounds */
+  --gradient-sunset: linear-gradient(135deg, #FF8C42 0%, #FF6B35 100%);
+  --gradient-ocean: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+  --gradient-warm: linear-gradient(180deg, #FFFCF7 0%, #F4E4D7 100%);
+  --gradient-hero: linear-gradient(135deg, #FFD166 0%, #FF8C42 50%, #4A90E2 100%);
+
+  /* Overlay Colors */
+  --overlay-dark: rgba(0, 0, 0, 0.5);
+  --overlay-light: rgba(255, 255, 255, 0.9);
+
+  /* Decorative Elements */
+  --decoration-opacity: 0.1;
+  --decoration-blur: 60px;
+}
+
+/* ==========================================================================
+   Dark Mode Variables (Optional - Future Enhancement)
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Override colors for dark mode if needed */
+    /* Currently not implemented as landing page is light-only */
+  }
+}
+
+/* ==========================================================================
+   Utility Classes for Variables
+   ========================================================================== */
+
+.color-primary { color: var(--color-primary); }
+.color-accent { color: var(--color-accent); }
+.color-success { color: var(--color-success); }
+.color-error { color: var(--color-error); }
+
+.bg-primary { background-color: var(--color-primary); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-sand { background-color: var(--color-sand-beige); }
+.bg-warm { background: var(--gradient-warm); }

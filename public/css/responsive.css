@@ -1,0 +1,527 @@
+/* ==========================================================================
+   Responsive Styles - Mobile First Approach
+   ========================================================================== */
+
+/* ==========================================================================
+   Tablet - 768px and up
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  /* Typography Scaling */
+  .section-title {
+    font-size: var(--font-size-4xl);
+  }
+
+  .hero-headline {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+  }
+
+  /* Layout */
+  section {
+    padding: var(--section-padding-tablet) 0;
+  }
+
+  .container {
+    padding: 0 var(--space-lg);
+  }
+
+  /* Header */
+  .header-actions {
+    gap: var(--space-md);
+  }
+
+  .phone-number {
+    font-size: var(--font-size-lg);
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: var(--space-3xl) 0;
+  }
+
+  .hero-subheadline {
+    gap: var(--space-lg);
+  }
+
+  .price-hero {
+    padding: var(--space-xl) var(--space-2xl);
+    max-width: 700px;
+  }
+
+  .hero-cta {
+    flex-wrap: nowrap;
+  }
+
+  /* Offer Section */
+  .offer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Benefits Grid */
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Testimonials Grid */
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Education Grid */
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Form Section */
+  .form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   Desktop - 1024px and up
+   ========================================================================== */
+
+@media (min-width: 1024px) {
+  /* Typography */
+  .section-title {
+    font-size: var(--font-size-5xl);
+  }
+
+  .hero-headline {
+    font-size: clamp(3rem, 6vw, 4.5rem);
+  }
+
+  /* Layout */
+  section {
+    padding: var(--section-padding-desktop) 0;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: var(--space-4xl) 0;
+  }
+
+  .hero-content {
+    gap: var(--space-2xl);
+  }
+
+  .price-hero {
+    max-width: 800px;
+    padding: var(--space-2xl) var(--space-3xl);
+  }
+
+  .price-label {
+    font-size: var(--font-size-lg);
+  }
+
+  .price-details {
+    font-size: var(--font-size-lg);
+  }
+
+  /* Palm Decorations - Visible on Desktop */
+  .hero-decoration {
+    opacity: 0.08;
+  }
+
+  .palm-left,
+  .palm-right {
+    width: 250px;
+    height: 400px;
+  }
+
+  .palm-left {
+    left: -80px;
+  }
+
+  .palm-right {
+    right: -80px;
+  }
+
+  /* Benefits Grid */
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Testimonials Grid */
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Form Container */
+  .contact-form {
+    padding: var(--space-2xl);
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+
+  /* Hover Effects - Desktop Only */
+  .benefit-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .cta-button:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* ==========================================================================
+   Large Desktop - 1280px and up
+   ========================================================================== */
+
+@media (min-width: 1280px) {
+  /* Container */
+  .container {
+    max-width: var(--max-width-xl);
+  }
+
+  /* Hero Section */
+  .hero-headline {
+    font-size: 4.5rem;
+  }
+
+  /* Price Hero - Maximum Size */
+  .price-hero {
+    max-width: 900px;
+  }
+
+  /* Benefits Grid - 4 columns */
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+  }
+
+  /* Testimonials Grid - 4 columns for wide screens */
+  .testimonials-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Education Grid */
+  .education-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ==========================================================================
+   Extra Large - 1536px and up
+   ========================================================================== */
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: var(--max-width-2xl);
+  }
+
+  .hero-decoration {
+    opacity: 0.1;
+  }
+
+  .palm-left,
+  .palm-right {
+    width: 300px;
+    height: 450px;
+  }
+
+  .palm-left {
+    left: -100px;
+  }
+
+  .palm-right {
+    right: -100px;
+  }
+}
+
+/* ==========================================================================
+   Mobile Specific - Under 640px
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  /* Header - Mobile Compact */
+  .header {
+    padding: var(--space-xs) 0;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .header-actions {
+    gap: var(--space-xs);
+  }
+
+  .cta-button {
+    height: var(--button-height-sm);
+    padding: 0 var(--space-sm);
+    font-size: var(--font-size-sm);
+  }
+
+  /* Hero - Mobile Optimized */
+  .hero {
+    padding: var(--space-xl) 0;
+  }
+
+  .trust-badge {
+    font-size: var(--font-size-xs);
+    padding: 6px var(--space-sm);
+  }
+
+  .hero-headline {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+
+  .hero-subheadline {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .subheadline-item {
+    font-size: var(--font-size-sm);
+  }
+
+  /* Price Hero - Mobile Size */
+  .price-hero {
+    padding: var(--space-md) var(--space-lg);
+    transform: rotate(-1deg);
+  }
+
+  .price-label {
+    font-size: var(--font-size-sm);
+  }
+
+  .price-amount {
+    font-size: clamp(3.5rem, 18vw, 6rem);
+  }
+
+  .price-details {
+    font-size: var(--font-size-sm);
+  }
+
+  /* Hero CTA - Stack on Mobile */
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--space-sm);
+  }
+
+  .hero-cta .cta-button {
+    width: 100%;
+    height: var(--button-height);
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .section-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  /* Offer Section */
+  .offer-card {
+    padding: var(--space-lg);
+  }
+
+  .offer-card h3 {
+    font-size: var(--font-size-lg);
+  }
+
+  /* Benefits - Single Column */
+  .benefit-card {
+    padding: var(--space-lg);
+  }
+
+  .benefit-icon {
+    font-size: 2.5rem;
+  }
+
+  /* Testimonials - Single Column */
+  .testimonial-card {
+    padding: var(--space-lg);
+  }
+
+  .testimonial-card::before {
+    font-size: 3.5rem;
+    left: var(--space-md);
+  }
+
+  /* Education - Single Column */
+  .education-card {
+    padding: var(--space-lg);
+  }
+
+  /* Form - Mobile Optimized */
+  .contact-form {
+    padding: var(--space-lg);
+  }
+
+  .form-group input,
+  .form-group select {
+    height: 48px;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  .form-group textarea {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  .submit-button {
+    height: 56px;
+    font-size: var(--font-size-base);
+  }
+
+  .contact-info-card {
+    padding: var(--space-lg);
+  }
+
+  .phone-large {
+    font-size: var(--font-size-xl);
+  }
+
+  /* FAQ - Mobile */
+  .faq-question {
+    padding: var(--space-md);
+    font-size: var(--font-size-base);
+  }
+
+  .faq-answer p {
+    padding: 0 var(--space-md) var(--space-md);
+    font-size: var(--font-size-sm);
+  }
+
+  /* Footer - Mobile */
+  .footer {
+    padding: var(--space-xl) 0 var(--space-md);
+  }
+
+  .footer-content {
+    gap: var(--space-lg);
+  }
+
+  .service-areas {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  .header,
+  .hero-cta,
+  .cta-button,
+  .form-container,
+  .footer {
+    display: none;
+  }
+
+  body {
+    background: white;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+}
+
+/* ==========================================================================
+   Reduced Motion - Accessibility
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .price-hero::before {
+    animation: none;
+  }
+}
+
+/* ==========================================================================
+   High Contrast Mode - Accessibility
+   ========================================================================== */
+
+@media (prefers-contrast: high) {
+  .cta-button,
+  .price-hero,
+  .offer-badge {
+    border: 2px solid currentColor;
+  }
+
+  .shadow-warm,
+  .shadow-soft {
+    box-shadow: 0 0 0 2px currentColor;
+  }
+}
+
+/* ==========================================================================
+   Touch Device Optimizations
+   ========================================================================== */
+
+@media (hover: none) and (pointer: coarse) {
+  /* Larger touch targets */
+  .cta-button,
+  .phone-number,
+  .faq-question {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Remove hover effects on touch devices */
+  .benefit-card:hover,
+  .cta-button:hover,
+  .phone-number:hover {
+    transform: none;
+  }
+
+  /* Ensure form inputs are accessible */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* ==========================================================================
+   Landscape Orientation - Mobile
+   ========================================================================== */
+
+@media (max-width: 896px) and (orientation: landscape) {
+  .hero {
+    padding: var(--space-lg) 0;
+  }
+
+  .price-hero {
+    padding: var(--space-sm) var(--space-lg);
+  }
+
+  .hero-cta {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  section {
+    padding: var(--space-lg) 0;
+  }
+}
